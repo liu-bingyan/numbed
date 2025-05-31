@@ -9,12 +9,12 @@ This codebase is built upon and extends two main frameworks:
 1. **TabSurvey Framework** ([source](https://github.com/kathrinse/TabSurvey), MIT License): We utilize and modify their systematic model evaluation framework to conduct comprehensive testing of our approaches. The framework provides standardized implementations for:
    - Data loading and preprocessing
    - Framework for model implementation and training 
-   - Model scoreer and logging
+   - Model scorer and logging
 
 2. **RTDL Numerical Embeddings** ([source](https://github.com/yandex-research/rtdl-num-embeddings), MIT License): We incorporate their FT-Transformer implementation along with their reported optimal hyperparameters. This includes:
    - FT-Transformer implementation
-   - Dataset configuring downloading
-   - finetuned hyperparameters for base models
+   - Dataset configuration and downloading
+   - Finetuned hyperparameters for base models
 
 We combine these frameworks to test our new numerical embedding methods. Copies of the original licenses can be found in the `licenses/` folder.
 
