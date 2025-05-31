@@ -30,4 +30,4 @@ The numerical embedding implementations can be found in `models/basemodule_embed
 
 ## Results
 
-Experimental results are organized in two directories: `report-scenario1/` and `report-scenario2/`. Each directory contains the detailed performance metrics and analysis for its respective scenario.
+Experimental results are organized in two directories: `report-scenario1/` and `report-scenario2/`. Each directory contains the corresponding performance metrics.
