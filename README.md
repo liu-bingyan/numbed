@@ -2,30 +2,21 @@
 
 This repository contains the implementation for the TRL2025 workshop publication: "Embeddings for Numerical Features Using tanh Activation".
 
-## Attribution
-
-This repository incorporates code from:
-
-- [TabSurvey](https://github.com/kathrinse/TabSurvey), licensed under the MIT License
-- [RTDL Numerical Embeddings](https://github.com/yandex-research/rtdl-num-embeddings), licensed under the MIT License
-
-Copies of the original licenses can be found in the `licenses/` folder.
-
 ## Code Framework
 
-This codebase adapts and extends two main sources:
+This codebase is built upon and extends two main frameworks:
 
-1. **TabSurvey Framework**: We utilize and modify the systematic model evaluation framework from TabSurvey to conduct comprehensive testing of our approaches. The framework provides standardized implementations for:
+1. **TabSurvey Framework** ([source](https://github.com/kathrinse/TabSurvey), MIT License): We utilize and modify their systematic model evaluation framework to conduct comprehensive testing of our approaches. The framework provides standardized implementations for:
    - Data loading and preprocessing
    - Framework for model implementation and training 
    - Model scoreer and logging
 
-2. **RTDL Numerical Embeddings**: We incorporate the FT-Transformer implementation from the RTDL project, along with their reported optimal hyperparameters. This includes:
+2. **RTDL Numerical Embeddings** ([source](https://github.com/yandex-research/rtdl-num-embeddings), MIT License): We incorporate their FT-Transformer implementation along with their reported optimal hyperparameters. This includes:
    - FT-Transformer implementation
    - Dataset configuring downloading
    - finetuned hyperparameters for base models
 
-We combine these frameworks to test our new numerical embedding methods.
+We combine these frameworks to test our new numerical embedding methods. Copies of the original licenses can be found in the `licenses/` folder.
 
 ## Configuration and Usage
 
