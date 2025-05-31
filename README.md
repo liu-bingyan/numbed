@@ -1,4 +1,4 @@
-# numbed
+# NumBed
 
 This repository contains the implementation for the TRL2025 workshop publication: "Embeddings for Numerical Features Using tanh Activation".
 
@@ -16,16 +16,16 @@ Copies of the original licenses can be found in the `licenses/` folder.
 This codebase adapts and extends two main sources:
 
 1. **TabSurvey Framework**: We utilize and modify the systematic model evaluation framework from TabSurvey to conduct comprehensive testing of our approaches. The framework provides standardized implementations for:
-   - Data preprocessing
-   - Model training and evaluation pipelines
-   - Performance metrics and analysis
+   - Data loading and preprocessing
+   - Framework for model implementation and training 
+   - Model scoreer and logging
 
 2. **RTDL Numerical Embeddings**: We incorporate the FT-Transformer implementation from the RTDL project, along with their reported optimal hyperparameters. This includes:
-   - FT-Transformer architecture
-   - Dataset downloading
-   - Tuned hyperparameter configurations
+   - FT-Transformer implementation
+   - Dataset configuring downloading
+   - finetuned hyperparameters for base models
 
-The combination of these frameworks allows us to systematically evaluate our proposed numerical embedding approaches within a robust experimental setup.
+We combine these frameworks to test our new numerical embedding methods.
 
 ## Configuration and Usage
 
