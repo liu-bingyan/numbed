@@ -1,0 +1,16 @@
+2025-04-10 02:03:13.344947
+mlp - california
+
+MSE - mean: 0.06369
+MSE - std: 0.00941
+RMSE - mean: 0.25167
+RMSE - std: 0.01873
+R2 - mean: 0.77607
+R2 - std: 0.03346
+
+Train time: 14.928007
+Test time: 0.004956
+
+Best Parameters: {'d_layers': [586, 65], 'dropout': 0.280265976554849, 'num_bins': {'-lr': 78, '-t-lr': 69, '-lrlr': 93, '-t-lrlr': 71}, 'learning_rate': 0.0035203785021797763}
+
+

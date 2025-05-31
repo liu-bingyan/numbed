@@ -1,0 +1,9 @@
+,trainning_time,average_epochs,time_per_epoch,testing_time
+emb_12lr_relu_alpha,15.2051,26.0000,0.5698,0.0125
+emb_12lr_relu_standard,14.3402,25.0000,0.5682,0.0124
+emb_12lr_tanh_alpha,13.3171,23.0000,0.5674,0.0130
+emb_12lr_tanh_standard,15.5403,27.0000,0.5754,0.0129
+emb_57tlr_relu_alpha,5.3704,29.0000,0.1806,0.0057
+emb_57tlr_relu_standard,4.7284,26.0000,0.1804,0.0058
+emb_57tlr_tanh_alpha,3.5340,19.0000,0.1773,0.0056
+emb_57tlr_tanh_standard,4.7290,26.0000,0.1794,0.0056

@@ -1,0 +1,35 @@
+parameters: {
+    Adult: { 
+        MLP: {
+            hidden_dim: [899, 586, 586, 876],
+            n_layers: 4,
+            learning_rate: 0.0031504026354328813,
+            num_bins: 70, 
+        },
+    },
+    CaliforniaHousing: { 
+        MLP: {
+            hidden_dim: [345, 646, 646, 357],
+            n_layers: 4,
+            learning_rate: 0.0004435452499319372,
+            num_bins: 78, 
+        },
+    },
+    Covertype: {
+        MLP: {
+            hidden_dim:  [77, 657, 657, 657, 657, 749],
+            n_layers: 6,
+            learning_rate: 0.0031504026354328813,
+            num_bins: 70,
+        },
+
+    },
+    Higgs: { 
+        MLP: {
+            hidden_dim: [526, 311, 311, 311, 826],
+            n_layers: 5,
+            learning_rate: 0.0003624567212581622,
+            num_bins: 77,
+        },
+    },
+}

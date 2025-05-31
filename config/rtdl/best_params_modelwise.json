@@ -1,0 +1,1493 @@
+{
+    "parameters": {
+        "gesture": {
+            "mlp-l": {
+                "d_layers": [
+                    300,
+                    801,
+                    435
+                ],
+                "dropout": 0.0,
+                "num_bins": 119,
+                "learning_rate": 0.0016302099949692351
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    937,
+                    776,
+                    776,
+                    453
+                ],
+                "dropout": 0.0,
+                "num_bins": 114,
+                "learning_rate": 0.0006528689396142999
+            },
+            "mlp-t": {
+                "d_layers": [
+                    892,
+                    581,
+                    302
+                ],
+                "dropout": 0.39215021090249064,
+                "num_bins": null,
+                "learning_rate": 0.00013385148494449647
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    920,
+                    384,
+                    908
+                ],
+                "dropout": 0.0,
+                "num_bins": 76,
+                "learning_rate": 0.0009644187419365857
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    902,
+                    931
+                ],
+                "dropout": 0.19654620721718313,
+                "num_bins": 114,
+                "learning_rate": 0.0009180045139579777
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    779,
+                    529,
+                    582
+                ],
+                "dropout": 0.12298020079763063,
+                "num_bins": 121,
+                "learning_rate": 0.0021766541693743285
+            },
+            "resnet-l": {
+                "n_blocks": 3,
+                "d_main": 479,
+                "dropout_first": 0.0444071575681222,
+                "dropout_second": 0.0,
+                "d_hidden": 866,
+                "num_bins": 1,
+                "learning_rate": 5.810956270854744e-05
+            },
+            "resnet-lr": {
+                "n_blocks": 8,
+                "d_main": 502,
+                "dropout_first": 0.13850599925654306,
+                "dropout_second": 0.0,
+                "d_hidden": 1703,
+                "num_bins": 12,
+                "learning_rate": 5.5103423659526796e-05
+            },
+            "resnet-t": {
+                "n_blocks": 7,
+                "d_main": 160,
+                "dropout_first": 0.06475063790176672,
+                "dropout_second": 0.009767224317873024,
+                "d_hidden": 600,
+                "num_bins": null,
+                "learning_rate": 0.00236048685096718
+            },
+            "resnet-t-lr": {
+                "n_blocks": 2,
+                "d_main": 309,
+                "dropout_first": 0.01367589022379358,
+                "dropout_second": 0.0,
+                "d_hidden": 957,
+                "num_bins": 57,
+                "learning_rate": 0.000329547098409887
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.16535662742840618,
+                "ffn_dropout": 0.040940055888772406,
+                "ffn_d_hidden": 578,
+                "num_bins": 256,
+                "learning_rate": 7.34592395252957e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 4,
+                "attention_dropout": 0.1363152596402798,
+                "ffn_dropout": 0.014328560045563925,
+                "ffn_d_hidden": 698,
+                "num_bins": 288,
+                "learning_rate": 3.0174775218058505e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.2157497975873232,
+                "ffn_dropout": 0.08395727659047905,
+                "ffn_d_hidden": 353,
+                "num_bins": 400,
+                "learning_rate": 2.8317951079941904e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.24799761595511277,
+                "ffn_dropout": 0.2673643110676694,
+                "ffn_d_hidden": 942,
+                "num_bins": 512,
+                "learning_rate": 1.7926321761347656e-05
+            }
+        },
+        "fb-comments": {
+            "mlp-l": {
+                "d_layers": [
+                    870,
+                    814,
+                    176
+                ],
+                "dropout": 0.30963016875813076,
+                "num_bins": 42,
+                "learning_rate": 0.00037938647709944454
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    933,
+                    837
+                ],
+                "dropout": 0.3991633670251851,
+                "num_bins": 77,
+                "learning_rate": 0.0006791409312807271
+            },
+            "mlp-t": {
+                "d_layers": [
+                    387
+                ],
+                "dropout": 0.3558143025451998,
+                "num_bins": null,
+                "learning_rate": 0.00011717518829138798
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    989
+                ],
+                "dropout": 0.42463882647665696,
+                "num_bins": 57,
+                "learning_rate": 0.00011144533418907463
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    879
+                ],
+                "dropout": 0.3236850900400417,
+                "num_bins": 89,
+                "learning_rate": 0.00039602984836263904
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    805
+                ],
+                "dropout": 0.41377715958684885,
+                "num_bins": 117,
+                "learning_rate": 0.00013026312023717236
+            },
+            "resnet-l": {
+                "n_blocks": 3,
+                "d_main": 436,
+                "dropout_first": 0.039164971883217575,
+                "dropout_second": 0.0,
+                "d_hidden": 504,
+                "num_bins": 110,
+                "learning_rate": 9.025752619473653e-05
+            },
+            "resnet-lr": {
+                "n_blocks": 1,
+                "d_main": 354,
+                "dropout_first": 0.34475555440502237,
+                "dropout_second": 0.0,
+                "d_hidden": 850,
+                "num_bins": 55,
+                "learning_rate": 0.00014253326669727242
+            },
+            "resnet-t": {
+                "n_blocks": 5,
+                "d_main": 438,
+                "dropout_first": 0.499730368088394,
+                "dropout_second": 0.0,
+                "d_hidden": 1410,
+                "num_bins": null,
+                "learning_rate": 6.822195867044196e-05
+            },
+            "resnet-t-lr": {
+                "n_blocks": 8,
+                "d_main": 418,
+                "dropout_first": 0.43809106331796854,
+                "dropout_second": 0.0,
+                "d_hidden": 1630,
+                "num_bins": 28,
+                "learning_rate": 7.327082174745147e-05
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.03320362913312139,
+                "ffn_dropout": 0.01893767613843192,
+                "ffn_d_hidden": 640,
+                "num_bins": 320,
+                "learning_rate": 1.2003457532926666e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.08489292138990842,
+                "ffn_dropout": 0.047042985424693845,
+                "ffn_d_hidden": 468,
+                "num_bins": 296,
+                "learning_rate": 2.8670015482262846e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.4465643916994285,
+                "ffn_dropout": 0.3798723182978342,
+                "ffn_d_hidden": 850,
+                "num_bins": 424,
+                "learning_rate": 0.00016427845420544858
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.16004455663620512,
+                "ffn_dropout": 0.0006048247502242754,
+                "ffn_d_hidden": 980,
+                "num_bins": 432,
+                "learning_rate": 1.7128152674906144e-05
+            }
+        },
+        "otto": {
+            "mlp-l": {
+                "d_layers": [
+                    944,
+                    282
+                ],
+                "dropout": 0.4817781047948017,
+                "num_bins": 44,
+                "learning_rate": 0.00015164663060532313
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    856,
+                    72,
+                    564
+                ],
+                "dropout": 0.4878260532840904,
+                "num_bins": 74,
+                "learning_rate": 0.0004177988916512021
+            },
+            "mlp-t": {
+                "d_layers": [
+                    872,
+                    225
+                ],
+                "dropout": 0.48611953902494215,
+                "num_bins": null,
+                "learning_rate": 0.00010102047206391853
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    823
+                ],
+                "dropout": 0.4540802558518063,
+                "num_bins": 15,
+                "learning_rate": 0.0001743290351914811
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    970,
+                    831,
+                    831,
+                    831,
+                    831,
+                    588
+                ],
+                "dropout": 0.46055937260948526,
+                "num_bins": 13,
+                "learning_rate": 0.0004787551513800524
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    980,
+                    517
+                ],
+                "dropout": 0.41693662867530457,
+                "num_bins": 111,
+                "learning_rate": 0.00043286194606532524
+            },
+            "resnet-l": {
+                "n_blocks": 7,
+                "d_main": 511,
+                "dropout_first": 0.47912197791195255,
+                "dropout_second": 0.0,
+                "d_hidden": 1814,
+                "num_bins": 23,
+                "learning_rate": 7.599353386369465e-05
+            },
+            "resnet-lr": {
+                "n_blocks": 4,
+                "d_main": 225,
+                "dropout_first": 0.47322811277859766,
+                "dropout_second": 0.0,
+                "d_hidden": 309,
+                "num_bins": 69,
+                "learning_rate": 8.679209211180561e-05
+            },
+            "resnet-t": {
+                "n_blocks": 3,
+                "d_main": 383,
+                "dropout_first": 0.4855395405842022,
+                "dropout_second": 0.0,
+                "d_hidden": 1083,
+                "num_bins": null,
+                "learning_rate": 0.0001165197830319935
+            },
+            "resnet-t-lr": {
+                "n_blocks": 7,
+                "d_main": 446,
+                "dropout_first": 0.42016395270086004,
+                "dropout_second": 0.0,
+                "d_hidden": 1385,
+                "num_bins": 71,
+                "learning_rate": 8.377875343876033e-05
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.3116685738711644,
+                "ffn_dropout": 0.09298234290195484,
+                "ffn_d_hidden": 640,
+                "num_bins": 376,
+                "learning_rate": 1.9244371142434376e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.0904472066888393,
+                "ffn_dropout": 0.17566324922564183,
+                "ffn_d_hidden": 1033,
+                "num_bins": 488,
+                "learning_rate": 1.3275186563809527e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.2355454831431579,
+                "ffn_dropout": 0.21156660577475245,
+                "ffn_d_hidden": 328,
+                "num_bins": 472,
+                "learning_rate": 3.6533190264807975e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.31384633728922845,
+                "ffn_dropout": 0.13617563600188778,
+                "ffn_d_hidden": 1015,
+                "num_bins": 392,
+                "learning_rate": 1.3092676484726634e-05
+            }
+        },
+        "higgs-small": {
+            "mlp-l": {
+                "d_layers": [
+                    443,
+                    1012,
+                    401
+                ],
+                "dropout": 0.4051557937186702,
+                "num_bins": 90,
+                "learning_rate": 0.0002268387514494389
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    526,
+                    311,
+                    311,
+                    311,
+                    826
+                ],
+                "dropout": 0.43969163265677097,
+                "num_bins": 77,
+                "learning_rate": 0.0003624567212581622
+            },
+            "mlp-t": {
+                "d_layers": [
+                    446
+                ],
+                "dropout": 0.0,
+                "num_bins": null,
+                "learning_rate": 0.0015938514881369981
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    893,
+                    761,
+                    761,
+                    332
+                ],
+                "dropout": 0.424601548182856,
+                "num_bins": 55,
+                "learning_rate": 0.00021949022672093088
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    488
+                ],
+                "dropout": 0.42275359953448316,
+                "num_bins": 124,
+                "learning_rate": 0.000180721699506457
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    828
+                ],
+                "dropout": 0.0,
+                "num_bins": 70,
+                "learning_rate": 6.917760909960908e-05
+            },
+            "resnet-l": {
+                "n_blocks": 2,
+                "d_main": 512,
+                "dropout_first": 0.41862238995287343,
+                "dropout_second": 0.0,
+                "d_hidden": 685,
+                "num_bins": 29,
+                "learning_rate": 0.0004078865114103079
+            },
+            "resnet-lr": {
+                "n_blocks": 5,
+                "d_main": 464,
+                "dropout_first": 0.47600875287482936,
+                "dropout_second": 0.0,
+                "d_hidden": 512,
+                "num_bins": 62,
+                "learning_rate": 0.00020440949409405347
+            },
+            "resnet-t": {
+                "n_blocks": 2,
+                "d_main": 117,
+                "dropout_first": 0.43947633727930574,
+                "dropout_second": 0.33855371063368955,
+                "d_hidden": 422,
+                "num_bins": null,
+                "learning_rate": 0.00032843582750486576
+            },
+            "resnet-t-lr": {
+                "n_blocks": 3,
+                "d_main": 256,
+                "dropout_first": 0.44193736017704865,
+                "dropout_second": 0.0525728553338318,
+                "d_hidden": 257,
+                "num_bins": 65,
+                "learning_rate": 0.0002578808400704695
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 1,
+                "attention_dropout": 0.3598283002930603,
+                "ffn_dropout": 0.15832501623258005,
+                "ffn_d_hidden": 1017,
+                "num_bins": 392,
+                "learning_rate": 2.4859725207414086e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.09151364410755994,
+                "ffn_dropout": 0.27897877083222544,
+                "ffn_d_hidden": 503,
+                "num_bins": 280,
+                "learning_rate": 2.2598259720799188e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.26038647574200846,
+                "ffn_dropout": 0.4984109071253916,
+                "ffn_d_hidden": 500,
+                "num_bins": 336,
+                "learning_rate": 0.0003829453443893417
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.1326055170996284,
+                "ffn_dropout": 0.2734522215140842,
+                "ffn_d_hidden": 1129,
+                "num_bins": 440,
+                "learning_rate": 1.7658724424772542e-05
+            }
+        },
+        "covtype": {
+            "mlp-l": {
+                "d_layers": [
+                    349,
+                    696,
+                    696,
+                    696,
+                    696,
+                    696,
+                    696,
+                    536
+                ],
+                "dropout": 0.0,
+                "num_bins": 108,
+                "learning_rate": 0.0016064905930146263
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    77,
+                    657,
+                    657,
+                    657,
+                    657,
+                    749
+                ],
+                "dropout": 0.0,
+                "num_bins": 100,
+                "learning_rate": 0.00184129009541315
+            },
+            "mlp-t": {
+                "d_layers": [
+                    281,
+                    783,
+                    783,
+                    783,
+                    524
+                ],
+                "dropout": 0.04819585741177791,
+                "num_bins": null,
+                "learning_rate": 7.207506713304263e-05
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    188,
+                    614,
+                    614,
+                    700
+                ],
+                "dropout": 0.1000737354347703,
+                "num_bins": 11,
+                "learning_rate": 0.00038975560147119754
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    44,
+                    1017,
+                    1017,
+                    1017,
+                    1017,
+                    1017,
+                    562
+                ],
+                "dropout": 0.0,
+                "num_bins": 96,
+                "learning_rate": 0.0002984350995304323
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    442,
+                    711,
+                    711,
+                    711,
+                    711,
+                    711,
+                    711,
+                    904
+                ],
+                "dropout": 0.08102192248095468,
+                "num_bins": 107,
+                "learning_rate": 0.0007301479644388437
+            },
+            "resnet-l": {
+                "n_blocks": 5,
+                "d_main": 450,
+                "dropout_first": 0.49190171071049904,
+                "dropout_second": 0.0,
+                "d_hidden": 1459,
+                "num_bins": 120,
+                "learning_rate": 5.7380430007147405e-05
+            },
+            "resnet-lr": {
+                "n_blocks": 6,
+                "d_main": 412,
+                "dropout_first": 0.46899401689986864,
+                "dropout_second": 0.0,
+                "d_hidden": 1296,
+                "num_bins": 84,
+                "learning_rate": 0.0006355319742734689
+            },
+            "resnet-t": {
+                "n_blocks": 7,
+                "d_main": 206,
+                "dropout_first": 0.3720950672509977,
+                "dropout_second": 0.0,
+                "d_hidden": 789,
+                "num_bins": null,
+                "learning_rate": 8.426922487120239e-05
+            },
+            "resnet-t-lr": {
+                "n_blocks": 6,
+                "d_main": 262,
+                "dropout_first": 0.49069784751758383,
+                "dropout_second": 0.0,
+                "d_hidden": 451,
+                "num_bins": 20,
+                "learning_rate": 0.0008405148118823823
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.010652707742527301,
+                "ffn_dropout": 0.14433281869299175,
+                "ffn_d_hidden": 1067,
+                "num_bins": 464,
+                "learning_rate": 1.0138042733995902e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.05117652640990951,
+                "ffn_dropout": 0.17388604668765087,
+                "ffn_d_hidden": 619,
+                "num_bins": 288,
+                "learning_rate": 2.854126973773743e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 4,
+                "attention_dropout": 0.05120962284149429,
+                "ffn_dropout": 0.09479103063215939,
+                "ffn_d_hidden": 655,
+                "num_bins": 288,
+                "learning_rate": 2.1705170021293756e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.1533242485744293,
+                "ffn_dropout": 0.12076750842430507,
+                "ffn_d_hidden": 649,
+                "num_bins": 320,
+                "learning_rate": 4.2194567806141416e-05
+            }
+        },
+        "adult": {
+            "mlp-l": {
+                "d_layers": [
+                    297,
+                    464,
+                    464,
+                    464,
+                    464,
+                    464,
+                    867
+                ],
+                "dropout": 0.48448547662506697,
+                "num_bins": 95,
+                "learning_rate": 8.561256559514397e-05
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    899,
+                    586,
+                    586,
+                    876
+                ],
+                "dropout": 0.47808210235996007,
+                "num_bins": 70,
+                "learning_rate": 0.0031504026354328813
+            },
+            "mlp-t": {
+                "d_layers": [
+                    514
+                ],
+                "dropout": 0.3532549625407062,
+                "num_bins": null,
+                "learning_rate": 0.00023159252029092514
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    71,
+                    342,
+                    342,
+                    342,
+                    342,
+                    342,
+                    743
+                ],
+                "dropout": 0.4396849336758799,
+                "num_bins": 114,
+                "learning_rate": 0.0012963847266704385
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    227
+                ],
+                "dropout": 0.16155912728613625,
+                "num_bins": 111,
+                "learning_rate": 0.0019982171303254627
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    419,
+                    954
+                ],
+                "dropout": 0.4718912866879653,
+                "num_bins": 128,
+                "learning_rate": 5.152234033289498e-05
+            },
+            "resnet-l": {
+                "n_blocks": 7,
+                "d_main": 129,
+                "dropout_first": 0.08876373003481401,
+                "dropout_second": 0.1117874100792749,
+                "d_hidden": 301,
+                "num_bins": 88,
+                "learning_rate": 0.002454020029033515
+            },
+            "resnet-lr": {
+                "n_blocks": 4,
+                "d_main": 74,
+                "dropout_first": 0.23658611498659815,
+                "dropout_second": 0.0,
+                "d_hidden": 75,
+                "num_bins": 105,
+                "learning_rate": 0.0004722769974691746
+            },
+            "resnet-t": {
+                "n_blocks": 5,
+                "d_main": 81,
+                "dropout_first": 0.46406092741033345,
+                "dropout_second": 0.45443416191936525,
+                "d_hidden": 157,
+                "num_bins": null,
+                "learning_rate": 0.0031830858372604545
+            },
+            "resnet-t-lr": {
+                "n_blocks": 8,
+                "d_main": 490,
+                "dropout_first": 0.3373487303738271,
+                "dropout_second": 0.4266444012048564,
+                "d_hidden": 1856,
+                "num_bins": 124,
+                "learning_rate": 0.004381116257974785
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.2484876144549405,
+                "ffn_dropout": 0.168648864755985,
+                "ffn_d_hidden": 422,
+                "num_bins": 320,
+                "learning_rate": 4.578660977381642e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.10229848243697028,
+                "ffn_dropout": 0.2616904048768651,
+                "ffn_d_hidden": 312,
+                "num_bins": 192,
+                "learning_rate": 0.0001520930309527924
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 1,
+                "attention_dropout": 0.3368538528557553,
+                "ffn_dropout": 0.38121964257710594,
+                "ffn_d_hidden": 659,
+                "num_bins": 424,
+                "learning_rate": 8.387120174981944e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 1,
+                "attention_dropout": 0.2067961594567303,
+                "ffn_dropout": 0.20425566695088937,
+                "ffn_d_hidden": 603,
+                "num_bins": 328,
+                "learning_rate": 0.00011081300097891829
+            }
+        },
+        "house": {
+            "mlp-l": {
+                "d_layers": [
+                    1015,
+                    449,
+                    449,
+                    449,
+                    337
+                ],
+                "dropout": 0.1348275009827335,
+                "num_bins": 97,
+                "learning_rate": 0.0009315289779125191
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    502,
+                    925,
+                    925,
+                    925,
+                    925,
+                    925,
+                    61
+                ],
+                "dropout": 0.31696150772398435,
+                "num_bins": 77,
+                "learning_rate": 0.00027392616572802816
+            },
+            "mlp-t": {
+                "d_layers": [
+                    895,
+                    511,
+                    511,
+                    511,
+                    896
+                ],
+                "dropout": 0.2809018459056341,
+                "num_bins": null,
+                "learning_rate": 0.00019279967621204348
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    479,
+                    252,
+                    252,
+                    252,
+                    252,
+                    252,
+                    507
+                ],
+                "dropout": 0.0,
+                "num_bins": 41,
+                "learning_rate": 0.0006065049298975076
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    360,
+                    277,
+                    277,
+                    277,
+                    705
+                ],
+                "dropout": 0.30005850385187594,
+                "num_bins": 95,
+                "learning_rate": 0.0001394246852602213
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    303,
+                    529,
+                    529,
+                    631
+                ],
+                "dropout": 0.0,
+                "num_bins": 101,
+                "learning_rate": 0.00030368918204222873
+            },
+            "resnet-l": {
+                "n_blocks": 3,
+                "d_main": 134,
+                "dropout_first": 0.3129966624425672,
+                "dropout_second": 0.0,
+                "d_hidden": 307,
+                "num_bins": 60,
+                "learning_rate": 0.00438587317343089
+            },
+            "resnet-lr": {
+                "n_blocks": 7,
+                "d_main": 322,
+                "dropout_first": 0.2382100015861586,
+                "dropout_second": 0.21659123531076455,
+                "d_hidden": 903,
+                "num_bins": 29,
+                "learning_rate": 0.00016867127137116616
+            },
+            "resnet-t": {
+                "n_blocks": 8,
+                "d_main": 308,
+                "dropout_first": 0.4309214676139672,
+                "dropout_second": 0.0,
+                "d_hidden": 1015,
+                "num_bins": null,
+                "learning_rate": 0.0004037084553302831
+            },
+            "resnet-t-lr": {
+                "n_blocks": 2,
+                "d_main": 82,
+                "dropout_first": 0.10890092112606328,
+                "dropout_second": 0.01911762873601522,
+                "d_hidden": 206,
+                "num_bins": 72,
+                "learning_rate": 0.0017096661769420353
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 1,
+                "attention_dropout": 0.2326011445562442,
+                "ffn_dropout": 0.33925980619272517,
+                "ffn_d_hidden": 459,
+                "num_bins": 320,
+                "learning_rate": 8.234699283823223e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 1,
+                "attention_dropout": 0.17336913159928752,
+                "ffn_dropout": 0.18117488264673248,
+                "ffn_d_hidden": 296,
+                "num_bins": 280,
+                "learning_rate": 9.520710849203389e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 4,
+                "attention_dropout": 0.1573097196525869,
+                "ffn_dropout": 0.28383013816256414,
+                "ffn_d_hidden": 608,
+                "num_bins": 288,
+                "learning_rate": 1.973811302983108e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.00367871295345849,
+                "ffn_dropout": 0.37862817334855475,
+                "ffn_d_hidden": 474,
+                "num_bins": 200,
+                "learning_rate": 1.5183749356168051e-05
+            }
+        },
+        "microsoft": {
+            "mlp-l": {
+                "d_layers": [
+                    970,
+                    230,
+                    230,
+                    230,
+                    503
+                ],
+                "dropout": 0.39035703515091214,
+                "num_bins": 6,
+                "learning_rate": 0.00010054153780055776
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    534,
+                    478,
+                    816
+                ],
+                "dropout": 0.41599417145541834,
+                "num_bins": 51,
+                "learning_rate": 9.43891652961519e-05
+            },
+            "mlp-t": {
+                "d_layers": [
+                    865,
+                    276
+                ],
+                "dropout": 0.44419948653802355,
+                "num_bins": null,
+                "learning_rate": 5.316523703684339e-05
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    462
+                ],
+                "dropout": 0.38900624194747013,
+                "num_bins": 37,
+                "learning_rate": 5.4644106296102414e-05
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    889,
+                    386,
+                    386,
+                    792
+                ],
+                "dropout": 0.4596649689925184,
+                "num_bins": 16,
+                "learning_rate": 5.6570445865022503e-05
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    480,
+                    204,
+                    247
+                ],
+                "dropout": 0.14656258815896736,
+                "num_bins": 52,
+                "learning_rate": 0.00027431639674840006
+            },
+            "resnet-l": {
+                "n_blocks": 5,
+                "d_main": 321,
+                "dropout_first": 0.37984421932588847,
+                "dropout_second": 0.3725819093014353,
+                "d_hidden": 538,
+                "num_bins": 20,
+                "learning_rate": 0.0013531398811684001
+            },
+            "resnet-lr": {
+                "n_blocks": 6,
+                "d_main": 77,
+                "dropout_first": 0.4455136636797897,
+                "dropout_second": 0.29653364527124887,
+                "d_hidden": 275,
+                "num_bins": 121,
+                "learning_rate": 0.0003779053451663506
+            },
+            "resnet-t": {
+                "n_blocks": 4,
+                "d_main": 373,
+                "dropout_first": 0.43021810519909426,
+                "dropout_second": 0.0,
+                "d_hidden": 418,
+                "num_bins": null,
+                "learning_rate": 0.0007324632783173967
+            },
+            "resnet-t-lr": {
+                "n_blocks": 6,
+                "d_main": 74,
+                "dropout_first": 0.44651753697456925,
+                "dropout_second": 0.10775051227904933,
+                "d_hidden": 220,
+                "num_bins": 38,
+                "learning_rate": 0.0011832794077971632
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.3265541627326992,
+                "ffn_dropout": 0.23315538642815314,
+                "ffn_d_hidden": 427,
+                "num_bins": 256,
+                "learning_rate": 2.296393120491303e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.1477105318996435,
+                "ffn_dropout": 0.14068041574606654,
+                "ffn_d_hidden": 948,
+                "num_bins": 472,
+                "learning_rate": 1.3443416463873487e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.15842401343110477,
+                "ffn_dropout": 0.4890859114782645,
+                "ffn_d_hidden": 351,
+                "num_bins": 216,
+                "learning_rate": 5.525944048889549e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.1690611830429028,
+                "ffn_dropout": 0.21804185823229522,
+                "ffn_d_hidden": 665,
+                "num_bins": 256,
+                "learning_rate": 1.3613455386771064e-05
+            }
+        },
+        "churn": {
+            "mlp-l": {
+                "d_layers": [
+                    1022
+                ],
+                "dropout": 0.0,
+                "num_bins": 99,
+                "learning_rate": 9.041971025781171e-05
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    848,
+                    938,
+                    938,
+                    442
+                ],
+                "dropout": 0.0,
+                "num_bins": 91,
+                "learning_rate": 0.0011658211806002817
+            },
+            "mlp-t": {
+                "d_layers": [
+                    221
+                ],
+                "dropout": 0.0,
+                "num_bins": null,
+                "learning_rate": 0.0015131496560867618
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    826
+                ],
+                "dropout": 0.40296497570615114,
+                "num_bins": 82,
+                "learning_rate": 0.0020185115033642693
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    674,
+                    818,
+                    473
+                ],
+                "dropout": 0.4997690933996755,
+                "num_bins": 88,
+                "learning_rate": 0.0021654818554877604
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    843,
+                    965,
+                    965,
+                    965,
+                    965,
+                    965,
+                    89
+                ],
+                "dropout": 0.28678527622529754,
+                "num_bins": 46,
+                "learning_rate": 0.0040588269387717875
+            },
+            "resnet-l": {
+                "n_blocks": 8,
+                "d_main": 160,
+                "dropout_first": 0.38697155765429836,
+                "dropout_second": 0.19818951122732933,
+                "d_hidden": 287,
+                "num_bins": 92,
+                "learning_rate": 0.0036854795875101184
+            },
+            "resnet-lr": {
+                "n_blocks": 2,
+                "d_main": 115,
+                "dropout_first": 0.3988910663360386,
+                "dropout_second": 0.0,
+                "d_hidden": 217,
+                "num_bins": 53,
+                "learning_rate": 0.004687088679679877
+            },
+            "resnet-t": {
+                "n_blocks": 6,
+                "d_main": 346,
+                "dropout_first": 0.027770365047312152,
+                "dropout_second": 0.0,
+                "d_hidden": 953,
+                "num_bins": null,
+                "learning_rate": 0.0041500930209364285
+            },
+            "resnet-t-lr": {
+                "n_blocks": 8,
+                "d_main": 225,
+                "dropout_first": 0.2987193040111581,
+                "dropout_second": 0.14771419232772237,
+                "d_hidden": 359,
+                "num_bins": 126,
+                "learning_rate": 6.112629428402705e-05
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.2104106873631727,
+                "ffn_dropout": 0.45997724004774865,
+                "ffn_d_hidden": 672,
+                "num_bins": 424,
+                "learning_rate": 0.0002044337972909555
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.3685290994223234,
+                "ffn_dropout": 0.3290584302860645,
+                "ffn_d_hidden": 439,
+                "num_bins": 168,
+                "learning_rate": 0.000298077663155998
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.20394648944212274,
+                "ffn_dropout": 0.165787334718615,
+                "ffn_d_hidden": 750,
+                "num_bins": 296,
+                "learning_rate": 0.00035815663551192216
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.25232337123570103,
+                "ffn_dropout": 0.2352358573070873,
+                "ffn_d_hidden": 459,
+                "num_bins": 336,
+                "learning_rate": 0.0006417492459399523
+            }
+        },
+        "santander": {
+            "mlp-l": {
+                "d_layers": [
+                    889
+                ],
+                "dropout": 0.0,
+                "num_bins": 23,
+                "learning_rate": 5.2295212826664624e-05
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    474,
+                    135
+                ],
+                "dropout": 0.0,
+                "num_bins": 95,
+                "learning_rate": 5.2848814889977544e-05
+            },
+            "mlp-t": {
+                "d_layers": [
+                    798,
+                    451,
+                    451,
+                    451,
+                    475
+                ],
+                "dropout": 0.20993662310331682,
+                "num_bins": null,
+                "learning_rate": 0.0034207636876420334
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    179,
+                    410
+                ],
+                "dropout": 0.0,
+                "num_bins": 59,
+                "learning_rate": 0.00028609130460919766
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    666,
+                    1010,
+                    17
+                ],
+                "dropout": 0.0,
+                "num_bins": 111,
+                "learning_rate": 0.00013844669723682735
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    483
+                ],
+                "dropout": 0.3212450333035195,
+                "num_bins": 91,
+                "learning_rate": 8.461263433130204e-05
+            },
+            "resnet-l": {
+                "n_blocks": 5,
+                "d_main": 436,
+                "dropout_first": 0.4748403213362475,
+                "dropout_second": 0.21998376608029366,
+                "d_hidden": 749,
+                "num_bins": 125,
+                "learning_rate": 0.0003568091694761557
+            },
+            "resnet-lr": {
+                "n_blocks": 8,
+                "d_main": 341,
+                "dropout_first": 0.348448598335108,
+                "dropout_second": 0.0,
+                "d_hidden": 819,
+                "num_bins": 50,
+                "learning_rate": 0.003452136901150476
+            },
+            "resnet-t": {
+                "n_blocks": 8,
+                "d_main": 296,
+                "dropout_first": 0.2537365279372447,
+                "dropout_second": 0.0,
+                "d_hidden": 1095,
+                "num_bins": null,
+                "learning_rate": 0.0033495067225497556
+            },
+            "resnet-t-lr": {
+                "n_blocks": 8,
+                "d_main": 147,
+                "dropout_first": 0.384476029995364,
+                "dropout_second": 0.0,
+                "d_hidden": 389,
+                "num_bins": 114,
+                "learning_rate": 0.003229874194038976
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.4567623981357767,
+                "ffn_dropout": 0.17230279240767282,
+                "ffn_d_hidden": 1009,
+                "num_bins": 424,
+                "learning_rate": 1.2086548937647434e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.3458338257436698,
+                "ffn_dropout": 0.03958949462688748,
+                "ffn_d_hidden": 913,
+                "num_bins": 448,
+                "learning_rate": 2.2263809431598913e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.11319745235947515,
+                "ffn_dropout": 0.036691679266232666,
+                "ffn_d_hidden": 486,
+                "num_bins": 192,
+                "learning_rate": 0.0002817985486306031
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.43281786139426653,
+                "ffn_dropout": 0.4172170368413529,
+                "ffn_d_hidden": 456,
+                "num_bins": 296,
+                "learning_rate": 2.8958806659647515e-05
+            }
+        },
+        "california": {
+            "mlp-l": {
+                "d_layers": [
+                    784,
+                    559
+                ],
+                "dropout": 0.20864614594468456,
+                "num_bins": 106,
+                "learning_rate": 9.29066175745722e-05
+            },
+            "mlp-lr": {
+                "d_layers": [
+                    345,
+                    646,
+                    646,
+                    357
+                ],
+                "dropout": 0.4325036232895139,
+                "num_bins": 78,
+                "learning_rate": 0.0004435452499319372
+            },
+            "mlp-t": {
+                "d_layers": [
+                    533,
+                    352
+                ],
+                "dropout": 0.0896808364503644,
+                "num_bins": null,
+                "learning_rate": 5.47189003274151e-05
+            },
+            "mlp-t-lr": {
+                "d_layers": [
+                    495
+                ],
+                "dropout": 0.22619351153139497,
+                "num_bins": 69,
+                "learning_rate": 0.0001567800103105459
+            },
+            "mlp-lrlr": {
+                "d_layers": [
+                    762
+                ],
+                "dropout": 0.4475833365093676,
+                "num_bins": 93,
+                "learning_rate": 0.0005256460506092496
+            },
+            "mlp-t-lrlr": {
+                "d_layers": [
+                    210,
+                    552,
+                    946
+                ],
+                "dropout": 0.0,
+                "num_bins": 71,
+                "learning_rate": 0.0004155663959222878
+            },
+            "resnet-l": {
+                "n_blocks": 7,
+                "d_main": 183,
+                "dropout_first": 0.24030625307235037,
+                "dropout_second": 0.09845838030214168,
+                "d_hidden": 281,
+                "num_bins": 101,
+                "learning_rate": 0.00043265097965102477
+            },
+            "resnet-lr": {
+                "n_blocks": 1,
+                "d_main": 247,
+                "dropout_first": 0.33893362909204816,
+                "dropout_second": 0.0,
+                "d_hidden": 308,
+                "num_bins": 128,
+                "learning_rate": 0.0017749399327211092
+            },
+            "resnet-t": {
+                "n_blocks": 5,
+                "d_main": 254,
+                "dropout_first": 0.4858081732921578,
+                "dropout_second": 0.0,
+                "d_hidden": 280,
+                "num_bins": null,
+                "learning_rate": 0.0006243237267799152
+            },
+            "resnet-t-lr": {
+                "n_blocks": 3,
+                "d_main": 123,
+                "dropout_first": 0.2539758318914756,
+                "dropout_second": 0.0,
+                "d_hidden": 283,
+                "num_bins": 48,
+                "learning_rate": 7.906230799944287e-05
+            },
+            "transformer-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.16421587668143747,
+                "ffn_dropout": 0.3668843968779377,
+                "ffn_d_hidden": 277,
+                "num_bins": 200,
+                "learning_rate": 6.698977135004549e-05
+            },
+            "transformer-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 2,
+                "attention_dropout": 0.1147313087243809,
+                "ffn_dropout": 0.059834207853148635,
+                "ffn_d_hidden": 288,
+                "num_bins": 176,
+                "learning_rate": 2.8132543922055553e-05
+            },
+            "transformer-t-l": {
+                "residual_dropout": 0.0,
+                "n_blocks": 4,
+                "attention_dropout": 0.27105269303598245,
+                "ffn_dropout": 0.05305387816380375,
+                "ffn_d_hidden": 648,
+                "num_bins": 264,
+                "learning_rate": 3.945104960619535e-05
+            },
+            "transformer-t-lr": {
+                "residual_dropout": 0.0,
+                "n_blocks": 3,
+                "attention_dropout": 0.30083449085441194,
+                "ffn_dropout": 0.3436543405723867,
+                "ffn_d_hidden": 1162,
+                "num_bins": 472,
+                "learning_rate": 0.0003230033103143712
+            }
+        }
+    }
+}

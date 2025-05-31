@@ -1,0 +1,13 @@
+# General parameters
+dataset: otto
+objective: classification
+
+
+# Preprocessing parameters
+scale: True
+target_encode: True
+one_hot_encode: False
+
+# About the data
+cat_idx: []
+# cat_dims: [] 

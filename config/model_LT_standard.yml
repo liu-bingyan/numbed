@@ -1,0 +1,6 @@
+#----------------- Numerical embedding parameters -----------------#
+numerical_embedding: True
+activation: tanh
+use_M_matrix: False
+second_activation: ""
+initialization: standard

@@ -1,0 +1,12 @@
+# General parameters
+dataset: fb-comments
+objective: regression
+
+
+# Preprocessing parameters
+scale: True
+target_encode: True
+one_hot_encode: False
+
+# About the data
+cat_idx: [52]  # c3 is categorical (after numerical features)

@@ -1,0 +1,12 @@
+# General parameters
+dataset: churn
+objective: binary
+
+# Preprocessing parameters
+scale: True
+target_encode: True
+one_hot_encode: False
+
+# About the data
+cat_idx: [10]  # Geography is categorical (after numerical features)
+# cat_dims: [3]  # 3 countries 

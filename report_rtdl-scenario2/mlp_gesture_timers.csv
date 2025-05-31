@@ -1,0 +1,17 @@
+,trainning_time,average_epochs,time_per_epoch,testing_time
+emb_114lr_relu_alpha,7.9033,46.0000,0.1713,0.0040
+emb_114lr_relu_standard,19.0814,112.0000,0.1700,0.0041
+emb_114lr_tanh_alpha,8.8396,51.0000,0.1729,0.0041
+emb_114lr_tanh_standard,16.8656,98.0000,0.1709,0.0040
+emb_114lrlr_relu_M_relu_alpha,4.7861,26.0000,0.1793,0.0049
+emb_114lrlr_relu_M_relu_standard,11.9812,67.0000,0.1766,0.0049
+emb_114lrlr_tanh_M_relu_alpha,4.5483,25.0000,0.1802,0.0049
+emb_114lrlr_tanh_M_relu_standard,11.8853,66.0000,0.1781,0.0050
+emb_121tlrlr_relu_M_relu_alpha,5.8078,30.0000,0.1901,0.0051
+emb_121tlrlr_relu_M_relu_standard,10.4767,55.0000,0.1900,0.0051
+emb_121tlrlr_tanh_M_relu_alpha,5.2116,27.0000,0.1918,0.0051
+emb_121tlrlr_tanh_M_relu_standard,10.8249,57.0000,0.1886,0.0051
+emb_76tlr_relu_alpha,6.2774,48.0000,0.1297,0.0033
+emb_76tlr_relu_standard,12.0671,92.0000,0.1299,0.0035
+emb_76tlr_tanh_alpha,6.8750,52.0000,0.1312,0.0034
+emb_76tlr_tanh_standard,10.8963,83.0000,0.1308,0.0036

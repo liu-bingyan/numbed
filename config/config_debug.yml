@@ -1,0 +1,30 @@
+#----------------- Optimization parameters -----------------#
+n_trials: 5
+
+#----------------- Data parameters -----------------#
+small_sample: True
+scaler: minmax 
+scale_target: True
+
+#----------------- Cross validation parameters -----------------#
+# Cross validation parameters
+num_splits: 5
+shuffle: True
+seed: 221
+
+#----------------- Trainig parameters -----------------#
+num_splits: 5
+epochs: 10
+early_stopping_rounds: 20
+batch_size: 128
+val_batch_size: 256
+logging_period: 100
+use_gpu: True
+
+#----------------- IO parameters -----------------#
+save_model: True
+record_embedding_parameters:  True
+save_predictions: True
+save_loss: True
+save_results_json: True
+save_results: True

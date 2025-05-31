@@ -1,0 +1,3 @@
+numerical_embedding: True
+control_group: True
+activation: tanh

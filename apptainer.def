@@ -1,0 +1,105 @@
+Bootstrap: docker
+From: continuumio/miniconda3
+
+%labels
+    Maintainer "Bingyan Liu bingyan2@illinois.edu"
+    Description "Equivalent of the provided Dockerfile using Apptainer."
+
+%post
+    # -------------------------------------------------------------------------
+    # 1) Install Jupyter and create /opt/notebooks
+    # -------------------------------------------------------------------------
+    /opt/conda/bin/conda install jupyter -y
+    mkdir -p /opt/notebooks
+
+    # Generate a default Jupyter config (avoids token prompts)
+    /opt/conda/bin/jupyter notebook --generate-config
+
+
+    # -------------------------------------------------------------------------
+    # 2) Install line_profiler (with ipython support)
+    # -------------------------------------------------------------------------
+    /opt/conda/bin/pip install "line_profiler[ipython]"
+    /opt/conda/bin/python -m pip install catboost pyarrow geopy    
+
+    # -------------------------------------------------------------------------
+    # 3) Create and configure the 'sklearn' Conda environment
+    # -------------------------------------------------------------------------
+    /opt/conda/bin/conda create -n sklearn -y scikit-learn python=3.10
+    /opt/conda/bin/conda install -n sklearn -y -c anaconda ipykernel
+    /opt/conda/envs/sklearn/bin/python -m ipykernel install --user --name=sklearn
+
+    /opt/conda/bin/conda install -n sklearn -y -c conda-forge optuna
+    /opt/conda/bin/conda install -n sklearn -y -c conda-forge configargparse
+    /opt/conda/bin/conda install -n sklearn -y pandas
+
+    # for data downloading
+    /opt/conda/envs/sklearn/bin/python -m pip install catboost pyarrow geopy    
+
+    # -------------------------------------------------------------------------
+    # 4) Create and configure the 'gbdt' Conda environment
+    # -------------------------------------------------------------------------
+    /opt/conda/bin/conda create -n gbdt -y python=3.10
+    /opt/conda/bin/conda install -n gbdt -y -c anaconda ipykernel
+    /opt/conda/envs/gbdt/bin/python -m ipykernel install --user --name=gbdt
+
+    # Install GBDT libraries
+    /opt/conda/envs/gbdt/bin/python -m pip install xgboost==1.5.0
+    /opt/conda/envs/gbdt/bin/python -m pip install catboost==1.0.3
+    /opt/conda/envs/gbdt/bin/python -m pip install lightgbm==3.3.1
+
+    /opt/conda/bin/conda install -n gbdt -y -c conda-forge optuna
+    /opt/conda/bin/conda install -n gbdt -y -c conda-forge configargparse
+    /opt/conda/bin/conda install -n gbdt -y pandas
+
+    # ModelTrees
+    /opt/conda/envs/gbdt/bin/python -m pip install https://github.com/schufa-innovationlab/model-trees/archive/master.zip
+
+    # for data downloading
+    /opt/conda/envs/gbdt/bin/python -m pip install catboost pyarrow geopy    
+
+    # -------------------------------------------------------------------------
+    # 5) Create and configure the 'torch' Conda environment
+    # -------------------------------------------------------------------------
+    /opt/conda/bin/conda create -n torch -y pytorch==1.12.1 python=3.10 -c pytorch
+    /opt/conda/bin/conda install -n torch -y -c anaconda ipykernel
+    /opt/conda/bin/conda install -n torch -y -c conda-forge optuna
+    /opt/conda/bin/conda install -n torch -y -c conda-forge configargparse
+    /opt/conda/bin/conda install -n torch -y scikit-learn
+    /opt/conda/bin/conda install -n torch -y pandas
+    /opt/conda/bin/conda install -n torch -y matplotlib
+    /opt/conda/bin/conda install -n torch -y -c pytorch captum
+    /opt/conda/bin/conda install -n torch -y shap
+
+    /opt/conda/envs/torch/bin/python -m ipykernel install --user --name=torch
+
+    # for data downloading
+    /opt/conda/envs/torch/bin/python -m pip install catboost pyarrow geopy    
+    
+    # Install TabNet
+    /opt/conda/envs/torch/bin/python -m pip install pytorch-tabnet
+
+    # For NODE
+    /opt/conda/envs/torch/bin/python -m pip install requests
+    /opt/conda/envs/torch/bin/python -m pip install qhoptim
+
+    # For DeepGBM
+    /opt/conda/envs/torch/bin/python -m pip install lightgbm==3.3.1
+
+    # For TabTransformer
+    /opt/conda/envs/torch/bin/python -m pip install einops
+
+    # (Optional) Clean up packages to reduce image size
+    /opt/conda/bin/conda clean -afy
+    rm -rf /var/lib/apt/lists/*
+
+%environment
+    # Set environment variables for runtime
+    # Prepend conda base bin to PATH so "conda" and "python" are found easily
+    export PATH="/opt/conda/bin:${PATH}"
+
+%runscript
+    # This is the default command when you run `apptainer run <image.sif>`.
+    # For example, launch a Jupyter notebook on port 8888, accessible from outside.
+    exec jupyter notebook --notebook-dir=/opt/notebooks --ip=0.0.0.0 --no-browser --allow-root
+

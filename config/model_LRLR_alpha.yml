@@ -1,0 +1,6 @@
+#----------------- Numerical embedding parameters -----------------#
+numerical_embedding: True
+activation: relu
+use_M_matrix: True
+second_activation: relu
+initialization: alpha
