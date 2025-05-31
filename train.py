@@ -11,9 +11,8 @@ from utils.scorer import get_scorer
 from utils.timer import Train_Timer, Test_Timer
 from utils.io_utils import save_results_to_file, save_hyperparameters_to_file, save_loss_to_file, save_results_to_json_file
 from utils.parser import get_parser, get_given_parameters_parser
-# from utils.io_utils_flat import  save_scores_to_json_file
 from sklearn.model_selection import KFold, StratifiedKFold  # , train_test_split
-from gpu.gpu_monitor import log_memory_usage
+
 
 def get_scorer_timer_results(sc,train_timer,test_timer,args):
     scores = sc.get_results()
@@ -27,9 +26,7 @@ def print_score_and_time(sc, t1, t2):
     print("Inference time:", t2.get_average_time())
 
 def cross_validation(model, X, y, args):
-    # print("Initial memory state:")
-    # log_memory_usage()
-    
+
     sc = get_scorer(args)
     train_timer = Train_Timer(args)
     test_timer = Test_Timer(args)
@@ -42,32 +39,21 @@ def cross_validation(model, X, y, args):
         raise NotImplementedError("Objective" + args.objective + "is not yet implemented.")
 
     for i, (train_index, test_index) in enumerate(kf.split(X, y)):
-        # print(f"\nFold {i} - Before data split:")
-        # log_memory_usage()
 
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
 
-        # print(f"Fold {i} - After data split:")
-        # log_memory_usage()
-
         curr_model = model.clone()
-        
-        # print(f"Fold {i} - Before training:")
-        # log_memory_usage()
 
         train_timer.start()
         try:
             loss_history, val_loss_history = curr_model.fit(X_train, y_train, X_test, y_test)
         except RuntimeError as e:
             print(f"Memory state when error occurred:")
-            log_memory_usage()
+            # log_memory_usage()
             raise e
             
         train_timer.end(len(loss_history))
-
-        # print(f"Fold {i} - After training:")
-        # log_memory_usage()
 
         if args.save_loss:
             save_loss_to_file(args, loss_history, "loss", extension=i)
@@ -165,16 +151,7 @@ def main_once(args):
     print_score_and_time(sc, t1, t2)
     
 
-def monitor_gpu():
-    while True:
-        log_memory_usage()
-        time.sleep(1)
-
 if __name__ == "__main__":
-    # Start GPU monitoring in background
-    # monitor_thread = threading.Thread(target=monitor_gpu, daemon=True)
-    # monitor_thread.start()
-    
     parser = get_parser()
     arguments = parser.parse_args()
     print("Global arguments:")
@@ -188,6 +165,3 @@ if __name__ == "__main__":
         arguments = parser.parse_args()
         print(f"Given parameters: {arguments.best_params_file}:")
         main_once(arguments)
-
-    # The `monitor thread` will automatically stop when the main program ends
-    # because it's a daemon thread
